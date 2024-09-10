@@ -44,4 +44,8 @@ public class Document {
     public void clear(){
         texte = "";
     }
+
+    public void inserer(int debut,String remplacement){
+        remplacer(debut,debut,remplacement+texte.substring(debut));
+    }
 }
