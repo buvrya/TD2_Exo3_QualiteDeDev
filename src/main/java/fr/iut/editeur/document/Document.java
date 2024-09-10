@@ -34,10 +34,14 @@ public class Document {
     public void majuscules(int debut, int fin) {
         String partie = texte.substring(debut, fin);
         partie =partie.toUpperCase();
-        remplacer(debut, fin-1, partie);
+        remplacer(debut, fin-debut, partie);
     }
 
     public void effacer(int debut, int fin) {
         remplacer(debut,fin,"");
+    }
+
+    public void clear(){
+        texte = "";
     }
 }
